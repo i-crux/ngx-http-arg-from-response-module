@@ -216,7 +216,7 @@ arg_resp_subrequest_post_handler(ngx_http_request_t *r,
         /* TODO
          * 搞清楚为啥会有这个请求
          */
-        ngx_log_error(NGX_LOG_EMERG, r->connection->log, 0, "arg_resp_subrequest_post_handler --------------> running again in rctx = %p(maybe NULL)");
+        ngx_log_error(NGX_LOG_DEBUG, r->connection->log, 0, "arg_resp_subrequest_post_handler --------------> running again in rctx = %p(maybe NULL)");
         return NGX_DECLINED;
     }
 
